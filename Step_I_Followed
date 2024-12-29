@@ -1,0 +1,33 @@
+Step 1: Download the file.
+Download and open the Microsoft Excel workbook Data_Exercise_File. The workbook contains only one worksheet called Data_Exercise_File.
+
+The sheet contains information about the five USA campaigns, including the start date and launch date for each campaign. It also includes a list of the dates of Federal holidays for both 2023 and 2024 and the current date in cell B1. The date in cell B1 is to be used as the "start date" in the calculations you create in E5 and F5. 
+
+Important: Please note that the Excel shown in the screenshots in this exemplar is set to United States settings and dates are therefore showing in the MM/DD/YY format. If your local machine is set to a different region and does not display dates in this format, please skip Steps 1 and 2 in this exercise. Completing them may cause the format setting on cell B1 to revert to your local region's date format. The calculations you create would then produce results different to those shown in the screenshots. 
+
+Sheet entitled USA Launch Dates. No formulas entered.
+Step 2: Create the Calculations.
+In cell B1 create a formula using the TODAY function, which will always display the current calendar date. 
+
+Delete the formula in B1 and type the date 05/09/23 into the cell. 
+
+Note: You are being asked to remove the dynamic formula and add the date as a static entry at this point so that you can compare the results you achieve in this exercise with the results in the Exemplar.
+
+In cell E5, create a formula that calculates the number of calendar days between the date in B1 and the deadline date in D5. This must be a subtraction formula.
+
+TIP: This formula will be copied down to row 9 at the end of the exercise, so you’ll need to add dollar signs to the B1 reference to ensure that it stays constant during the copy operation.
+
+In cell F5 create a formula using the NETWORKDAYS function to calculate the number of weekdays between the date in B1 and the deadline in D5.
+
+Add an argument to the formula so that the Federal holiday dates in the cell range J5 to J26 are excluded from the result of the NETWORKDAYS calculation. You will need to add dollar signs to three of the cell references in the formula so that it can be copied down to row 9.
+
+Tip: Remember that Excel ignores any dates in the J5 to J26 block that are already in the past when calculating the formula. This means that you can include the full cell range J5 to J26 as the third argument in the formula.
+
+In cell G5, use the MONTH function to create a formula that extracts the month from the deadline date in D5.
+
+In cell H5, create a formula using the YEAR function to extract the year from the deadline date in D5.
+
+Copy the formulas you have created in row 5, down as far as row 9.
+
+Conclusion
+This spreadsheet provides a good example of how date functions can be used to generate new date and time information in a spreadsheet. 
